@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body {
+        position: relative;
+        height: 297mm;
+        width: 210mm;
+        /* to centre page on screen*/
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+    .header {
+      background-color: #DAE2ED;
+      padding: 15px 20px 5px 25px;
+    }
+    .header__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .number {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .company__info {
+      padding-top: 15px;
+      font-size: 10px;
+      text-align: right;
+    }
+    .bordered, .bordered-td {
+        border: 2px solid #DAE2ED;
+     }
+    .filled {
+        background-color: #DAE2ED;   
+     }
+     .big {
+       font-size: 16px;
+       font-weight: bold;
+     }
+     .small {
+       font-size: 11px; 
+     }
+     .attention {
+        font-size: 11px;
+        text-align: center;
+        padding: 7px 0;
+        margin-top: 30px;
+        border-top: 1.7px dashed #D9D9D9;
+        border-bottom: 1.7px dashed #D9D9D9;
+     }
+     .black {
+        color: #000000;   
+     }
+     .attention-footer {
+        margin-top: 5px;
+        padding: 15px;
+        border: 2px solid #DAE2ED;
+      }
+      .stamp {
+        position: absolute;
+        bottom: 250px;
+        left: 30px;
+        transform: rotate(10deg)
+      }
+      .podpis {
+        position: absolute;
+        bottom: 250px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="header__wrap">
+          <div class="logo"><img src="https://onlyketch.github.io/emails/russialike/vaucher/logo.png" alt=""></div>
+          <div class="number">Ваучер № 425</div>
+      </div>
+      <div class="company__info">ИП Полунчуков Д.С. ИНН 711601857728  ОГРНИП 322774600215027</div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <table style="width: 100%; border-collapse: collapse;" class="bordered">
+            <tr>
+              <td width="160" style="padding: 5px;" class="bordered-td">Название гостиницы:</td>
+              <td colspan="4" style="padding: 5px;" class="bordered-td filled"><b>Отель Достоевский</b></td>
+            </tr>
+            <tr>
+              <td style="padding: 5px;" class="bordered-td">Адрес:</td>
+              <td colspan="4" style="padding: 5px;" class="bordered-td">Тюмень, ул. Республики 5</td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 2px;" class="bordered-td">Дата заезда</td>
+              <td align="center" class="bordered-td">Дата выезда</td>
+              <td align="center" class="bordered-td">Ночи</td>
+              <td align="center" class="bordered-td">Взрослые</td>
+              <td align="center" class="bordered-td">Дети</td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 5px; border-right: 2px solid #FFFFFF;" class="bordered-td filled"><b>24/11/22</b></td>
+              <td align="center" class="bordered-td filled" style="border-right: 2px solid #FFFFFF;"><b>26/11/22</b></td>
+              <td align="center" class="bordered-td filled" style="border-right: 2px solid #FFFFFF;"><b>2</b></td>
+              <td align="center" class="bordered-td filled" style="border-right: 2px solid #FFFFFF;"><b>2</b></td>
+              <td align="center" class="bordered-td filled"><b>1</b></td>
+            </tr>
+          </table>
+        </td>
+        <td width="154">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td align="center" style="padding: 5px;"><img width="65" height="65" src="https://onlyketch.github.io/emails/russialike/vaucher/qr.png" alt=""></td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 5px; border-top: 2px solid #DAE2ED; border-right: 2px solid #DAE2ED; border-bottom: 2px solid #DAE2ED;"><b>Стандартный</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <table style="width: 100%; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="160" class="bordered-td" style="padding: 5px; border-top: 0;">Дополнительно</td>
+        <td class="bordered-td" colspan="4" style="padding: 5px; border-top: 0;">Завтрак, обед, детская кроватка</td>
+      </tr>
+      <tr>
+        <td class="bordered-td" style="padding: 5px;">Ф.И.О.</td>
+        <td class="bordered-td filled" style="padding: 5px;">Иван Петриков</td>
+        <td align="center" class="bordered-td" style="padding: 5px;">+79002111111</td>
+        <td class="bordered-td" style="padding: 5px;">Паспорт:</td>
+        <td align="center" class="bordered-td" style="padding: 5px;">Россия</td>
+      </tr>
+      
+    </table>
+    
+    <table style="width: 100%; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="240" class="bordered-td small" style="padding: 5px; border-top: 0;">Примечания: Хочу тихий номер на верхнем этаже</td>
+        <td align="center" class="bordered-td big" style="padding: 5px; border-top: 0;">Итого:</td>
+        <td align="center" class="bordered-td big" style="padding: 5px; border-top: 0;">8.235,00 ₽</td>
+        <td align="center" class="bordered-td big" style="padding: 5px; border-top: 0;">Подтверждено</td>
+      </tr>
+    </table>
+    
+    <div class="attention">
+      <b>ВНИМАНИЕ:</b> Ваучер действителен только со статусом «Подтверждено», при предъявлении паспорта, если не был оформлен возврат на момент предоставления услуги. Актуальная информация о статусе бронирования доступна в личном кабинете клиента и партнера на сайте Russialike.ru
+    </div>
+    
+    <table style="width: 100%; margin-top: 15px;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="padding-right: 10px;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="font-size: 18px;"><b>Бронирование № 425</b><br><span class="small">Дата создания: 15/11/22</span></td>
+              <td align="right"><img width="37" height="37" src="https://onlyketch.github.io/emails/russialike/vaucher/qr.png" alt=""></td>
+            </tr>
+            <tr>
+              <td class="bordered-td" style="padding: 5px;">Название гостиницы:</td>
+              <td class="bordered-td filled" style="padding: 5px;"><b>Отель Достоевский</b></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="bordered-td" style="padding: 7px;">Тюмень, ул. Республики 5</td>
+            </tr>
+          </table>
+        </td>
+        <td width="146"><img width="146" height="110" src="https://onlyketch.github.io/emails/russialike/vaucher/hotel.png" alt=""></td>
+      </tr>
+    </table>
+    
+    <table style="width: 100%; margin-top: 5px; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="bordered-td" style="padding: 5px;">Дата заезда</td>
+        <td class="bordered-td filled" style="padding: 5px; border-bottom: 2px solid #FFFFFF;">24/11/22</td>
+        <td class="bordered-td" style="padding: 5px;">Дата выезда</td>
+        <td class="bordered-td filled" style="padding: 5px; border-bottom: 2px solid #FFFFFF;">26/11/22</td>
+        <td class="bordered-td" style="padding: 5px;">Взрослые</td>
+        <td class="bordered-td" style="padding: 5px;">Дети</td>
+      </tr>
+      <tr>
+        <td class="bordered-td" style="padding: 5px;">Ф.И.О.</td>
+        <td class="bordered-td filled" style="padding: 5px;" colspan="3"><b>Иван Петриков</b></td>
+        <td class="bordered-td" style="padding: 5px;"><b>2</b></td>
+        <td class="bordered-td" style="padding: 5px;"><b>1</b></td>
+      </tr>
+    </table>
+    
+    <table style="width: 100%; margin-top: 15px; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;">
+            <tr>
+              <td class="bordered-td" width="197" style="padding: 10px 10px 30px;">
+                <table style="width: 100%;">
+                  <tr>
+                    <td><img width="65" height="53" src="https://onlyketch.github.io/emails/russialike/vaucher/notice.png" alt=""></td>
+                    <td class="big" style="color: #DAE2ED;">Информация для туристов:</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="small">Время заезда 12.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="small">Время выезда 10.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="small" style="padding-top: 15px;">Наша гостиница находится на центральном проспекте, вам нужно повернуть налево в арку и вы увидите вход. Имеется парковка.</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>  
+        </td>
+        <td width="380" style="padding-left: 25px;">
+          <table style="width: 100%;">
+            <tr>
+              <td colspan="2" class="big">Информация об оплате:</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 0;">Стандартный*1</td>
+              <td align="right">200,00 ₽</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding-top: 10px;"><b>Дополнительно</b></td>
+            </tr>
+            <tr>
+              <td>Завтрак</td>
+              <td align="right">80,00 ₽</td>
+            </tr>
+             <tr>
+              <td>Обед</td>
+              <td align="right">200,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Десткая кроватка</td>
+              <td align="right">00,00 ₽</td>
+            </tr>
+             <tr>
+              <td colspan="2"><b>Тариф</b></td>
+            </tr>
+             <tr>
+              <td>Возврат за 7 дней (до 17.11.2022)</td>
+              <td align="right">30,00 ₽</td>
+            </tr>
+              <tr>
+              <td>Сервисный сбор</td>
+              <td align="right">10,20 ₽</td>
+            </tr>
+          </table>
+        </td>
+      </tr>  
+    </table>
+    
+    <table style="width: 100%; margin-top: 60px; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="right">
+          <table style="width: 480px; border-collapse: collapse;">
+            <tr>
+              <td align="center" class="bordered-td big" style="padding: 5px;">Итого:</td>
+              <td align="center" class="bordered-td big filled">36.325,00 ₽</td>
+              <td align="center" class="bordered-td big">Оплачено:</td>
+              <td align="center" class="bordered-td big filled">36.325,00 ₽</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <table style="width: 100%; margin-top: 5px; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="right">
+          <table style="width: 740px; border-collapse: collapse;">
+            <tr>
+              <td align="center" class="bordered-td big" style="padding: 5px; font-weight: normal;">Способ оплаты:</td>
+              <td align="center" class="bordered-td big filled">Оплата банковской картой</td>
+              <td align="center" class="bordered-td big" style="padding: 5px; font-weight: normal;">Статус:</td>
+              <td align="center" class="bordered-td big filled">Подтверждено</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <div class="attention-footer">
+      <span class="big">Внимание</span>
+      <ul style="list-style-type: square; color: #DAE2ED; margin-top: 5px;">
+        <li><span class="black small">Вслучае возникновения проблем спредоставлением услуги, необходимо немедленно связаться со службой поддержки «RussiaLike»потелефону:8 (800)201 70 91,или на почту:info@russialike.ru</span></li>
+        <li><span class="black small">Правила отмены бронирования указаны на странице бронируемой услуги изависят от выбранного вами тарифа ирегламентируютсяофертой, которую вы приняли, регистрируясь на сайте RussiaLike.ru</span></li>
+        <li><span class="black small">Ознакомиться софертой иправилами отмены можно по ссылке:https://russialike.ru/page/pravila-i-usloviyaЗа приобретение дополнительных услуг, не указанных вданном бронировании, клиент несет самостоятельную ответственность</span></li>
+      </ul>
+    </div>
+    
+    
+      <img class="stamp" width="160" height="160" src="https://onlyketch.github.io/emails/russialike/vaucher/shtamp.png" alt="">
+    <img class="podpis" width="106" height="89" src="https://onlyketch.github.io/emails/russialike/vaucher/podpis.png" alt="">
+    
+   
+
+  </body>
+</html>
