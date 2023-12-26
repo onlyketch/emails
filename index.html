@@ -27,12 +27,35 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/95990883" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+	<style type="text/css">
+		.logo {
+			text-align: center;
+			animation: rotateLogo 4s linear infinite;
+		}
+		.buildimg {
+			margin-top: 25px;
+		}
 
+		@keyframes rotateLogo {
+			from {
+				transform:rotate(0deg);
+				transform-origin: center center;
+			}
+			to {
+				transform:rotate(359deg);
+				transform-origin: center center;
+			}
+		}
+	</style>
 	<title>Заказать верстку Email</title>
 </head>
 <body>
 	<div class="container" style="max-width: 640px; margin: 40px auto;">
-		<img src="images/build.jpg" alt="картинка" style="width: 100%; height: auto;">
+		<div class="logo">
+			<img src="images/logo.png" width="60" height="60" alt="CraftMail">
+		</div>
+		<p class="sitename" style="font-family: 'Source Code Pro', monospace; font-size: 20px; text-align: center; padding: 0; margin: 10px 0 0 0;">CraftMail.Ru</p>
+		<img class="buildimg" src="images/build.jpg" alt="картинка" style="width: 100%; height: auto;">
 		<p style="font-family: 'Source Code Pro', monospace; font-size: 20px; margi-top: 25px; text-align: center;">Страница в разработке.</p>
 		<p style="font-family: 'Source Code Pro', monospace; font-size: 14px; margi-top: 25px; text-align: center;">По вопросам: hotalert@vk.com</p>
 	</div>
