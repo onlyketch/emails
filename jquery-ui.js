@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-	//Test
-	console.log('this is test message'); 
+	console.log(''); 
 
 	let elem = document.getElementById('qwerty6');
 	elem.remove();
