@@ -150,6 +150,7 @@ body {
   cursor: pointer;
   -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out;
+  z-index: 300;
 }
 
 .btn-up::before {
@@ -362,9 +363,31 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1380px) {
+  .filters .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .filters__services, .filters__clinic, .filters__specialization, .filters__search {
   width: 100%;
   max-width: 330px;
+  margin: 0 10px;
+}
+.filters__clinic {
+  margin-left: 0;
+}
+@media (max-width: 1380px) {
+  .filters__clinic .filters__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .filters__name {
   font-size: 12px;
@@ -518,6 +541,9 @@ body {
   background-size: 16px 16px;
   background-position: center;
 }
+.filters__search {
+  margin-right: 0;
+}
 .filters__line {
   width: 100%;
   height: 1px;
@@ -613,6 +639,16 @@ body {
           box-sizing: border-box;
   margin: 0 10px;
 }
+@media (max-width: 1200px) {
+  .doctors__card {
+    height: 360px;
+  }
+}
+@media (max-width: 1380px) {
+  .doctors__card-lg {
+    display: none;
+  }
+}
 .doctors__location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +703,12 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1200px) {
+  .doctors__image {
+    width: 220px;
+    height: 288px;
+  }
+}
 .doctors__info {
   position: absolute;
   bottom: 8px;
@@ -689,6 +731,11 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #798088;
+}
+@media (max-width: 1380px) {
+  .doctors__info-spec {
+    max-width: 180px;
+  }
 }
 .doctors__info-btn {
   position: absolute;
